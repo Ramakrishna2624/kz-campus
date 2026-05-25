@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KZ Campus by Keezenix Global - Learn, Build, and Grow. Immersive technology courses, direct industry internships, and career acceleration.">
+  <title>KZ Campus | Learn. Build. Grow.</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+</head>
+<body>
+
+  <!-- Floating Background Blobs -->
+  <div class="glow-bg-blob blob-1"></div>
+  <div class="glow-bg-blob blob-2"></div>
+  <div class="glow-bg-blob blob-3"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar" id="main-navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="logo-link">
+        <img src="assets/logo.jpg" alt="KZ Campus Logo">
+        <span>KZ Campus</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#home" class="nav-item active" data-page="home">Home</a></li>
+          <li><a href="#about" class="nav-item" data-page="about">About Us</a></li>
+          <li><a href="#courses" class="nav-item" data-page="courses">Courses</a></li>
+          <li><a href="#internships" class="nav-item" data-page="internships">Internships</a></li>
+          <li><a href="#contact" class="nav-item" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <div class="nav-btn-wrapper">
+        <a href="#courses" class="nav-btn">Explore Academy</a>
+      </div>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <div class="menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT PANEL
+       ========================================================================== -->
+  <main class="main-content" id="main-viewport">
+
+    <!-- ------------------------------------------------------------------------
+         HOME PAGE VIEW
+         ------------------------------------------------------------------------ -->
+    <section class="page-view active" id="home-view" data-page-id="home">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span></span> Empowering Digital Builders
+            </div>
+            <h1>Learn. Build. Grow.<br><span class="gradient-text">Unleash Tech Potential</span></h1>
+            <p>KZ Campus bridges the gap between academy and enterprise. Dive into immersive industry-vetted courses, develop enterprise-grade software, and transition directly into mentored career pipelines.</p>
+            <div class="hero-ctas">
+              <a href="#courses" class="btn btn-primary">Browse Courses <i data-lucide="arrow-right"></i></a>
+              <a href="#internships" class="btn btn-secondary">Apply for Internship</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-glow-ring"></div>
+            <img src="assets/hero_illustration.png" alt="KZ Campus - Path to Success Illustration" style="width: 100%; max-width: 440px; height: auto; z-index: 2; border-radius: var(--radius-md); filter: drop-shadow(0 15px 30px rgba(10, 79, 213, 0.1));">
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-section">
+        <div class="container">
+          <div class="stats-grid grid">
+            <div class="stat-item">
+              <div class="stat-number">15K+</div>
+              <div class="stat-label">Active Alumni Learners</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Tech Partnerships</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">Specialized Tracks</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">94%</div>
+              <div class="stat-label">Internship Placements</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Pillars Section -->
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>The KZ Experience Pillars</h2>
+            <p>Our educational model focuses on active development and industry readiness rather than passive learning.</p>
+          </div>
+          <div class="grid grid-3">
+            <!-- Pillar 1 -->
+            <div class="card-glass pillar-card">
+              <div class="pillar-icon-box blue flex-center">
+                <i data-lucide="book-open"></i>
+              </div>
+              <h3>1. Immersive Learning</h3>
+              <p>Skip theoretical lectures. Access highly structured curriculums focused on current enterprise standards, curated by active tech experts.</p>
+            </div>
+            <!-- Pillar 2 -->
+            <div class="card-glass pillar-card glow-green">
+              <div class="pillar-icon-box green flex-center">
+                <i data-lucide="terminal"></i>
+              </div>
+              <h3>2. Hands-on Building</h3>
+              <p>Build real systems, deploy pipelines, write automated test suites, and write code that solves production-level business problems.</p>
+            </div>
+            <!-- Pillar 3 -->
+            <div class="card-glass pillar-card">
+              <div class="pillar-icon-box blue flex-center">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <h3>3. Accelerated Growth</h3>
+              <p>Benefit from one-on-one mentorship, career pathing, portfolio reviews, and direct integration into corporate hiring pipelines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Path to Success Section -->
+      <div class="section" id="path-to-success-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Your Path to Success</h2>
+            <p>Our systematic career transition framework guides you from beginner concepts to professional-grade engineering excellence.</p>
+          </div>
+          
+          <div class="timeline">
+            <!-- Step 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge flex-center">1</div>
+              <div class="timeline-card">
+                <h4>Immersive Training Cohort</h4>
+                <p>Begin with structured, intensive training led by industry mentors. Solve real problems, attend code walkthroughs, and build solid foundations.</p>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge flex-center">2</div>
+              <div class="timeline-card">
+                <h4>Production-Grade Projects</h4>
+                <p>Skip standard tutorials. Develop active backend services, write unit testing blocks, configure Docker files, and deploy live apps.</p>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="timeline-item">
+              <div class="timeline-badge flex-center">3</div>
+              <div class="timeline-card">
+                <h4>Enterprise Internship Placement</h4>
+                <p>Enter our 3 to 6-month mentored placement at Keezenix Global. Participate in standups, submit PRs, and work on client-facing applications.</p>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="timeline-item">
+              <div class="timeline-badge flex-center">4</div>
+              <div class="timeline-card">
+                <h4>Full-Time Role Transition</h4>
+                <p>Over 80% of our high-performing interns convert to full-time junior developers inside Keezenix Global or match directly with tech partners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Slider Section -->
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Alumni Testimonials</h2>
+            <p>Read inspiring stories from our learners who transitioned into world-class software teams.</p>
+          </div>
+          <div class="testimonial-slider card-glass">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active" data-slide="0">
+              <div class="quote-icon"><i data-lucide="quote"></i></div>
+              <p class="testimonial-text">"KZ Campus changed my entire trajectory. Moving from the Full Stack Development course straight into an active internship with Keezenix Global prepared me for my current role at Google in ways no university could."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">AC</div>
+                <div class="author-info">
+                  <h4>Amina Chen</h4>
+                  <p>Full Stack Engineer at Google (Alumnus)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="testimonial-slide" data-slide="1">
+              <div class="quote-icon"><i data-lucide="quote"></i></div>
+              <p class="testimonial-text">"The Growth Engineering syllabus was exceptionally detailed. Implementing full data analysis pipelines and setting up automated tracking systems during my internship set me apart immediately."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">MR</div>
+                <div class="author-info">
+                  <h4>Marcus Reynolds</h4>
+                  <p>Growth Engineer Lead at Stripe (Alumnus)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="testimonial-slide" data-slide="2">
+              <div class="quote-icon"><i data-lucide="quote"></i></div>
+              <p class="testimonial-text">"Systems programming in Rust is normally very hard to learn on your own. At KZ Campus, the guidance from mentors made the ownership and concurrency paradigms feel extremely natural."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SM</div>
+                <div class="author-info">
+                  <h4>Sophia Martinez</h4>
+                  <p>Core Protocols Developer at Solana (Alumnus)</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide dots -->
+            <div class="slider-dots" id="testimonial-dots">
+              <span class="dot active" data-goto="0"></span>
+              <span class="dot" data-goto="1"></span>
+              <span class="dot" data-goto="2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="section">
+        <div class="container">
+          <div class="cta-banner">
+            <div class="cta-banner-glow"></div>
+            <h2>Ready to Write Your Success Story?</h2>
+            <p>Join our upcoming cohort or explore open internships. Start building your portfolio today under the guidance of real-world engineers.</p>
+            <div class="hero-ctas" style="justify-content: center;">
+              <a href="#courses" class="btn btn-accent">Explore Courses</a>
+              <a href="#contact" class="btn btn-secondary">Get Free Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         ABOUT US PAGE VIEW
+         ------------------------------------------------------------------------ -->
+    <section class="page-view" id="about-view" data-page-id="about">
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>About KZ Campus</h2>
+            <p>Empowering the next generation of builders by blending modern instruction with real software production.</p>
+          </div>
+
+          <div class="about-grid grid">
+            <div class="about-content">
+              <h3>Our Origin Story</h3>
+              <p>As a key educational division of <strong>Keezenix Global</strong>, KZ Campus was established to bridge a critical educational deficit: the vast divide between traditional academic theory and active, professional engineering demands.</p>
+              <p>We believe that writing software shouldn't just be taught from slides. Software engineering is a craft, best mastered through practice, code reviews, and launching real products to active users. We create a dynamic environment where student training and actual product development happen in perfect harmony.</p>
+              <h3>Mentorship & Learning Methodology</h3>
+              <p>Our program operates like an active engineering firm. Learners do not memorize definitions; they complete development milestones, submit pull requests, and undergo peer code reviews. We run weekly architecture workshops where students analyze system designs, identify performance bottlenecks, and learn how to write scalable, clean, and self-documenting code.</p>
+              <h3>Keezenix Global Ecosystem Integration</h3>
+              <p>Being fully backed by Keezenix Global gives our students an unfair career advantage. Unlike typical bootcamps that rely solely on external placement partners, our high-performing graduates transition directly into Keezenix Global's internal development pipelines. This ensures that every learner gains verifiable, real-world industry experience that makes their resumes stand out globally.</p>
+            </div>
+            <div class="about-visual" style="height: auto; padding: 0.5rem; display: flex; align-items: center; justify-content: center; background: none; border: none; box-shadow: none;">
+              <img src="assets/about_illustration.png" alt="Collaborative Tech Training Mockup" style="width: 100%; height: auto; border-radius: var(--radius-md); filter: drop-shadow(0 15px 30px rgba(10, 79, 213, 0.08));">
+            </div>
+          </div>
+
+          <!-- Mission & Vision Cards -->
+          <div class="grid grid-2" style="margin-bottom: 6rem;">
+            <div class="card-glass">
+              <div class="pillar-icon-box blue flex-center" style="margin: 0 0 1.5rem 0;">
+                <i data-lucide="target"></i>
+              </div>
+              <h3 style="font-family: var(--font-heading); margin-bottom: 1rem;">Our Mission</h3>
+              <p style="color: var(--color-text-gray);">To democratize premium engineering education and systematically accelerate early career entry through hands-on project creation, strict mentorship, and direct industry validation.</p>
+            </div>
+            <div class="card-glass glow-green">
+              <div class="pillar-icon-box green flex-center" style="margin: 0 0 1.5rem 0;">
+                <i data-lucide="eye"></i>
+              </div>
+              <h3 style="font-family: var(--font-heading); margin-bottom: 1rem;">Our Vision</h3>
+              <p style="color: var(--color-text-gray);">To serve as the global gold standard for outcome-based technical training, generating a highly skilled pool of developers who add engineering value from day one.</p>
+            </div>
+          </div>
+
+          <!-- Core Values -->
+          <h3 style="font-family: var(--font-heading); font-size: var(--h2-size); font-weight: 800; text-align: center; margin-bottom: 3rem;">Our Core Values</h3>
+          <div class="values-grid grid">
+            <div class="card-glass value-card">
+              <div class="value-icon-box flex-center"><i data-lucide="shield-check"></i></div>
+              <h4>Integrity First</h4>
+              <p>We hold our curriculum, instruction, and student code quality to the highest ethics and industry standards.</p>
+            </div>
+            <div class="card-glass value-card glow-green">
+              <div class="value-icon-box flex-center"><i data-lucide="award"></i></div>
+              <h4>Extreme Ownership</h4>
+              <p>We train engineers to take complete responsibility for their pipelines, services, and operational deployments.</p>
+            </div>
+            <div class="card-glass value-card">
+              <div class="value-icon-box flex-center"><i data-lucide="zap"></i></div>
+              <h4>Rapid Innovation</h4>
+              <p>Our code and courses evolve alongside current frameworks, libraries, and real architectural advances.</p>
+            </div>
+            <div class="card-glass value-card glow-green">
+              <div class="value-icon-box flex-center"><i data-lucide="users"></i></div>
+              <h4>Community Driven</h4>
+              <p>Peer code reviews, collaborative sprints, and open-source contributions represent our core structure.</p>
+            </div>
+          </div>
+
+          <!-- Mentors Section -->
+          <h3 style="font-family: var(--font-heading); font-size: var(--h2-size); font-weight: 800; text-align: center; margin-bottom: 3rem;">Expert Mentorship Team</h3>
+          <div class="mentors-grid grid">
+            <!-- Mentor 1 -->
+            <div class="card-glass mentor-card">
+              <div class="mentor-avatar">EV</div>
+              <h4>Dr. Elias Vance</h4>
+              <p class="title">Dean of AI Research</p>
+              <p class="company">Ex-Senior AI Scientist, Meta</p>
+            </div>
+            <!-- Mentor 2 -->
+            <div class="card-glass mentor-card glow-green">
+              <div class="mentor-avatar">CH</div>
+              <h4>Clara Holloway</h4>
+              <p class="title">Lead Web Architect</p>
+              <p class="company">Ex-Netflix Architecture Team</p>
+            </div>
+            <!-- Mentor 3 -->
+            <div class="card-glass mentor-card">
+              <div class="mentor-avatar">RK</div>
+              <h4>Rajit Kulkarni</h4>
+              <p class="title">Growth Architect</p>
+              <p class="company">Ex-Staff Growth Engineer, Uber</p>
+            </div>
+            <!-- Mentor 4 -->
+            <div class="card-glass mentor-card glow-green">
+              <div class="mentor-avatar">SJ</div>
+              <h4>Sarah Jenkins</h4>
+              <p class="title">Rust Systems Lead</p>
+              <p class="company">Ex-Core Compiler Engineer, Mozilla</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         COURSES PAGE VIEW
+         ------------------------------------------------------------------------ -->
+    <section class="page-view" id="courses-view" data-page-id="courses">
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Academy Programs</h2>
+            <p>Our courses are structured as rigorous cohort programs designed to build professional-grade expertise.</p>
+          </div>
+
+          <!-- Filter & Search Bar -->
+          <div class="courses-filter-bar">
+            <div class="search-input-wrapper">
+              <i data-lucide="search"></i>
+              <input type="text" id="course-search-box" placeholder="Search courses or topics...">
+            </div>
+            <div class="filter-tabs">
+              <button class="filter-tab active" data-filter="all">All Tracks</button>
+              <button class="filter-tab" data-filter="development">Web & Systems</button>
+              <button class="filter-tab" data-filter="ai-data">AI & Automation</button>
+              <button class="filter-tab" data-filter="growth">Engineering Growth</button>
+            </div>
+          </div>
+
+          <!-- Courses Grid -->
+          <div class="grid grid-3" id="courses-grid-container">
+            
+            <!-- Course 1 -->
+            <div class="card-glass course-card" data-category="development" data-keywords="javascript node react postgres database web full stack">
+              <div class="course-card-body">
+                <div class="course-tag-row">
+                  <span class="course-badge blue">Full Cohort</span>
+                  <span class="course-badge green">Beginner-to-Pro</span>
+                </div>
+                <h3>Full Stack Development</h3>
+                <p>Master modern web architectures. Learn frontend UI rendering, server-side scaling, database architectures, containerization, and secure cloud deployments.</p>
+                <button class="btn btn-secondary btn-view-course" data-course-id="fullstack-dev">Details & Syllabus <i data-lucide="chevron-right"></i></button>
+              </div>
+              <div class="course-meta">
+                <div class="course-meta-item"><i data-lucide="calendar"></i> 24 Weeks</div>
+                <div class="course-meta-item"><i data-lucide="users"></i> Cohort Style</div>
+              </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="card-glass course-card glow-green" data-category="ai-data" data-keywords="python neural networks llm transformers artificial intelligence deep learning ml model">
+              <div class="course-card-body">
+                <div class="course-tag-row">
+                  <span class="course-badge green">Advanced</span>
+                  <span class="course-badge blue">MLOps</span>
+                </div>
+                <h3>Full Stack AI</h3>
+                <p>Go beyond model training. Learn neural networks, custom fine-tuning of Large Language Models (LLMs), deployment pipeline optimizations, and AI integration inside web layers.</p>
+                <button class="btn btn-secondary btn-view-course" data-course-id="fullstack-ai">Details & Syllabus <i data-lucide="chevron-right"></i></button>
+              </div>
+              <div class="course-meta">
+                <div class="course-meta-item"><i data-lucide="calendar"></i> 30 Weeks</div>
+                <div class="course-meta-item"><i data-lucide="users"></i> Project cohort</div>
+              </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="card-glass course-card" data-category="ai-data" data-keywords="python automation scrapers api cron test selenium scripts devops integration">
+              <div class="course-card-body">
+                <div class="course-tag-row">
+                  <span class="course-badge blue">Fast Track</span>
+                  <span class="course-badge green">Hands-on</span>
+                </div>
+                <h3>Python Automation</h3>
+                <p>Automate workflows at scale. Build robust web scrapers, connect complex API pipelines, write automated test cases, and deploy self-healing background automation daemons.</p>
+                <button class="btn btn-secondary btn-view-course" data-course-id="python-auto">Details & Syllabus <i data-lucide="chevron-right"></i></button>
+              </div>
+              <div class="course-meta">
+                <div class="course-meta-item"><i data-lucide="calendar"></i> 12 Weeks</div>
+                <div class="course-meta-item"><i data-lucide="users"></i> Flex learning</div>
+              </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="card-glass course-card glow-green" data-category="growth" data-keywords="analytics data seo pipes tracking conversion test marketing engineering coding">
+              <div class="course-card-body">
+                <div class="course-tag-row">
+                  <span class="course-badge green">Intermediate</span>
+                  <span class="course-badge blue">Tech Marketing</span>
+                </div>
+                <h3>Growth Engineering</h3>
+                <p>Merge engineering logic with growth. Master complex analytics implementation, data collection pipelines, search engine algorithms, and advanced A/B testing infrastructure.</p>
+                <button class="btn btn-secondary btn-view-course" data-course-id="growth-eng">Details & Syllabus <i data-lucide="chevron-right"></i></button>
+              </div>
+              <div class="course-meta">
+                <div class="course-meta-item"><i data-lucide="calendar"></i> 16 Weeks</div>
+                <div class="course-meta-item"><i data-lucide="users"></i> Cohort style</div>
+              </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="card-glass course-card" data-category="development" data-keywords="rust systems memory compiler webassembly systems programming thread concurrency">
+              <div class="course-card-body">
+                <div class="course-tag-row">
+                  <span class="course-badge blue">Expert</span>
+                  <span class="course-badge green">Low Level</span>
+                </div>
+                <h3>Rust Programming</h3>
+                <p>Learn memory safety without a garbage collector. Deep-dive into ownership, lifecycles, advanced concurrency patterns, embedded systems, and compiling Rust to WebAssembly.</p>
+                <button class="btn btn-secondary btn-view-course" data-course-id="rust-prog">Details & Syllabus <i data-lucide="chevron-right"></i></button>
+              </div>
+              <div class="course-meta">
+                <div class="course-meta-item"><i data-lucide="calendar"></i> 20 Weeks</div>
+                <div class="course-meta-item"><i data-lucide="users"></i> Advanced cohort</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         INTERNSHIPS PAGE VIEW
+         ------------------------------------------------------------------------ -->
+    <section class="page-view" id="internships-view" data-page-id="internships">
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Internships at KZ Campus</h2>
+            <p>Kickstart your career by entering real, production-ready engineering pipelines at Keezenix Global.</p>
+          </div>
+
+          <!-- Why Choose Us Grid -->
+          <div class="about-grid grid">
+            <div class="about-content">
+              <h3>Why KZ Campus Internships Stand Out</h3>
+              <p>Most internships involve reading mock scenarios or updating documentation. At KZ Campus, we don't run sandbox programs. Our interns are paired with Senior staff engineers at Keezenix Global to work directly on production-grade client apps, analytics pipelines, and internal tools.</p>
+              <p>You participate in our agile standups, submit Pull Requests under our rigorous peer review system, and write automated tests for your own code modules. We prepare you to be an active, valuable contributor in top-tier tech companies from your very first week.</p>
+            </div>
+            <div class="about-visual" style="height: auto; min-height: 320px;">
+              <div class="visual-mockup" style="justify-content: flex-start; text-align: left; padding: 2.5rem;">
+                <h4 style="color: var(--color-primary); margin-bottom: 1.5rem;"><i data-lucide="check-circle" style="vertical-align: middle;"></i> Industrial Placement Metrics</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                  <li><strong style="color: var(--color-secondary);">84% Transition Rate:</strong> Majority of our high-performing interns convert to full-time junior staff roles.</li>
+                  <li><strong style="color: var(--color-secondary);">1-on-1 Mentor Syncs:</strong> Weekly code architecture and career-planning feedback sessions.</li>
+                  <li><strong style="color: var(--color-secondary);">Global Network:</strong> Gain references to key domestic and international tech partners.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perks/Benefits Grid -->
+          <h3 style="font-family: var(--font-heading); font-size: var(--h2-size); font-weight: 800; text-align: center; margin-bottom: 3.5rem;">Benefits of Interning with Us</h3>
+          <div class="intern-perks-grid grid">
+            <!-- Perk 1 -->
+            <div class="card-glass perk-card">
+              <h4><i data-lucide="terminal"></i> Production Deployment</h4>
+              <p>Your code will be deployed to active servers. Learn Docker packaging, Github Actions workflows, and AWS/GCP deployments first-hand.</p>
+            </div>
+            <!-- Perk 2 -->
+            <div class="card-glass perk-card glow-green">
+              <h4><i data-lucide="pocket"></i> Competitive Stipend</h4>
+              <p>We value engineering intellect. High-performing students in senior internships receive standard financial compensations and stipends.</p>
+            </div>
+            <!-- Perk 3 -->
+            <div class="card-glass perk-card">
+              <h4><i data-lucide="file-badge"></i> Certified Portfolio</h4>
+              <p>Leave with a signed internship certificate from Keezenix Global, a portfolio of live production URLs, and verifiable commit histories.</p>
+            </div>
+          </div>
+
+          <!-- Open Opportunities Table -->
+          <h3 style="font-family: var(--font-heading); font-size: var(--h2-size); font-weight: 800; text-align: center; margin-bottom: 3rem;">Open Internship Positions</h3>
+          <div class="opps-table-container">
+            <table class="opps-table">
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Department</th>
+                  <th>Location</th>
+                  <th>Duration</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="internships-table-body">
+                <tr>
+                  <td><strong>Software Engineer Intern (Full-Stack)</strong></td>
+                  <td>Web Products</td>
+                  <td>Remote (GMT+5:30)</td>
+                  <td>6 Months</td>
+                  <td><button class="btn btn-lime btn-apply-intern" data-role="Software Engineer Intern (Full-Stack)" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Apply Now</button></td>
+                </tr>
+                <tr>
+                  <td><strong>AI Research Intern (NLP & LLMs)</strong></td>
+                  <td>Artificial Intelligence</td>
+                  <td>Hybrid (Tech City Hub)</td>
+                  <td>6 Months</td>
+                  <td><button class="btn btn-lime btn-apply-intern" data-role="AI Research Intern (NLP & LLMs)" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Apply Now</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Python Automation Assistant</strong></td>
+                  <td>DevOps & Testing</td>
+                  <td>Remote (Flexible)</td>
+                  <td>3 Months</td>
+                  <td><button class="btn btn-lime btn-apply-intern" data-role="Python Automation Assistant" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Apply Now</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Growth Engineering Intern</strong></td>
+                  <td>Data Analytics & SEO</td>
+                  <td>Remote</td>
+                  <td>4 Months</td>
+                  <td><button class="btn btn-lime btn-apply-intern" data-role="Growth Engineering Intern" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Apply Now</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Systems Engineer Intern (Rust)</strong></td>
+                  <td>Core Infrastructure</td>
+                  <td>Remote</td>
+                  <td>6 Months</td>
+                  <td><button class="btn btn-lime btn-apply-intern" data-role="Systems Engineer Intern (Rust)" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Apply Now</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------
+         CONTACT PAGE VIEW
+         ------------------------------------------------------------------------ -->
+    <section class="page-view" id="contact-view" data-page-id="contact">
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact KZ Campus</h2>
+            <p>Get in touch with our admissions advisors or career team. We are here to support your engineering journey.</p>
+          </div>
+
+          <div class="contact-grid grid">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 2rem;">Contact Information</h3>
+              <div class="contact-info-list">
+                <!-- Info 1 -->
+                <div class="contact-info-item">
+                  <div class="contact-icon-box flex-center"><i data-lucide="map-pin"></i></div>
+                  <div>
+                    <h4>Headquarters Address</h4>
+                    <p>Keezenix Global Campus, 4th Floor, Innovation Hub Tower, Block E, Tech City, Suite 410</p>
+                  </div>
+                </div>
+                <!-- Info 2 -->
+                <div class="contact-info-item">
+                  <div class="contact-icon-box flex-center"><i data-lucide="phone"></i></div>
+                  <div>
+                    <h4>Call Support</h4>
+                    <p>+1 (555) 890-4432 (Admissions)<br>+1 (555) 890-4433 (Corporate Relations)</p>
+                  </div>
+                </div>
+                <!-- Info 3 -->
+                <div class="contact-info-item">
+                  <div class="contact-icon-box flex-center"><i data-lucide="mail"></i></div>
+                  <div>
+                    <h4>Email Contacts</h4>
+                    <p>admissions@kzcampus.com<br>careers@kzcampus.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stylized Vector Map Mockup -->
+              <div class="map-mockup">
+                <div class="map-grid-pattern"></div>
+                <div class="map-pin">
+                  <div class="pin-circle"></div>
+                  <div class="pin-card">Keezenix Global HQ</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Form Card -->
+            <div class="card-glass contact-form-card glow-green">
+              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 2rem;">Send Us a Message</h3>
+              <form id="contact-support-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Full Name</label>
+                  <input type="text" id="contact-name" class="input-field" placeholder="John Doe">
+                  <span class="input-error-msg" id="contact-name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address</label>
+                  <input type="email" id="contact-email" class="input-field" placeholder="johndoe@example.com">
+                  <span class="input-error-msg" id="contact-email-error">Please enter a valid email address.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <select id="contact-subject" class="input-field" style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg fill=%22white%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/><path d=%22M0 0h24v24H0z%22 fill=%22none%22/></svg>'); background-repeat: no-repeat; background-position: right 1.25rem center; background-size: 1.25rem;">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="admissions">Admissions Inquiry</option>
+                    <option value="corporate">Corporate Partnerships</option>
+                    <option value="career">Career Placement & Recruiting</option>
+                    <option value="support">Technical Support</option>
+                  </select>
+                  <span class="input-error-msg" id="contact-subject-error">Please select a subject category.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message Details</label>
+                  <textarea id="contact-message" class="input-field textarea-field" placeholder="How can our engineering or admissions team help you?"></textarea>
+                  <span class="input-error-msg" id="contact-message-error">Please enter your message (at least 10 characters).</span>
+                </div>
+                <button type="submit" class="btn btn-lime" style="width: 100%; justify-content: center;">Submit Query <i data-lucide="send"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       MODALS & DIALOGS (CURRICULUMS & APPLICATION FORMS)
+       ========================================================================== -->
+  <!-- Course Detail Modal (Short & Long Term Plans) -->
+  <div class="modal-overlay" id="course-details-modal">
+    <div class="modal-content-wrapper" style="max-width: 780px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #0A4FD5 0%, #06183a 100%); border-radius: 24px 24px 0 0; padding: 2rem 2.25rem;">
+        <div>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem;">KZ Campus Academy</p>
+          <h3 id="modal-course-title" style="color: #FFFFFF; font-size: 1.75rem;">Course Details</h3>
+        </div>
+        <button class="modal-close-btn" id="close-course-modal-btn" style="color: rgba(255,255,255,0.8); top: 1.75rem;">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 0;">
+        <!-- Plan Tabs -->
+        <div class="plan-tabs-bar">
+          <button class="plan-tab active" data-plan="short" id="tab-short">
+            <i data-lucide="zap"></i>
+            <span>Short Term</span>
+            <small>4 – 5 Weeks</small>
+          </button>
+          <button class="plan-tab" data-plan="long" id="tab-long">
+            <i data-lucide="trending-up"></i>
+            <span>Long Term</span>
+            <small>4 – 5 Months</small>
+          </button>
+        </div>
+
+        <!-- Plan Panels -->
+        <div class="plan-panel" id="panel-short">
+          <div class="plan-overview">
+            <div class="plan-overview-info">
+              <p id="modal-short-desc" style="color: var(--color-text-gray); font-size: 0.95rem; line-height: 1.65;"></p>
+            </div>
+            <div class="plan-fee-card fee-blue">
+              <p class="fee-label">Short Term Fee</p>
+              <p class="fee-amount" id="modal-short-fee">₹ 0</p>
+              <p class="fee-sub">Per Person · 4–5 Weeks</p>
+            </div>
+          </div>
+          <h4 class="plan-section-title"><i data-lucide="list-todo"></i> Short Term Modules</h4>
+          <ul class="course-curriculum-list" id="modal-short-curriculum"></ul>
+        </div>
+
+        <div class="plan-panel" id="panel-long" style="display: none;">
+          <div class="plan-overview">
+            <div class="plan-overview-info">
+              <p id="modal-long-desc" style="color: var(--color-text-gray); font-size: 0.95rem; line-height: 1.65;"></p>
+            </div>
+            <div class="plan-fee-card fee-green">
+              <p class="fee-label">Long Term Fee</p>
+              <p class="fee-amount" id="modal-long-fee">₹ 0</p>
+              <p class="fee-sub">Per Person · 4–5 Months</p>
+            </div>
+          </div>
+          <h4 class="plan-section-title"><i data-lucide="list-todo"></i> Long Term Modules</h4>
+          <ul class="course-curriculum-list" id="modal-long-curriculum"></ul>
+        </div>
+
+        <div class="modal-footer-actions">
+          <button class="btn btn-secondary" id="modal-syllabus-close-btn">Close</button>
+          <button class="btn btn-primary" id="modal-enroll-now-btn">Enroll Now <i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Internship Apply Modal -->
+  <div class="modal-overlay" id="internship-apply-modal">
+    <div class="modal-content-wrapper">
+      <div class="modal-header">
+        <h3 id="modal-intern-title">Apply for Internship</h3>
+        <button class="modal-close-btn" id="close-intern-modal-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--color-text-gray); margin-bottom: 1.5rem;">Fill out the form below to submit your portfolio for the <strong id="modal-intern-role-label" style="color: var(--color-secondary);">Position</strong> internship.</p>
+        
+        <form id="internship-form" novalidate>
+          <input type="hidden" id="intern-role-hidden">
+          <div class="form-group">
+            <label for="intern-name" class="form-label">Full Name</label>
+            <input type="text" id="intern-name" class="input-field" placeholder="Jane Doe">
+            <span class="input-error-msg" id="intern-name-error">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label for="intern-email" class="form-label">Email Address</label>
+            <input type="email" id="intern-email" class="input-field" placeholder="janedoe@example.com">
+            <span class="input-error-msg" id="intern-email-error">Please enter a valid email address.</span>
+          </div>
+          <div class="form-group">
+            <label for="intern-portfolio" class="form-label">Portfolio or GitHub Link</label>
+            <input type="url" id="intern-portfolio" class="input-field" placeholder="https://github.com/username">
+            <span class="input-error-msg" id="intern-portfolio-error">Please enter a valid URL (starting with http:// or https://).</span>
+          </div>
+          <div class="form-group">
+            <label for="intern-statement" class="form-label">Short Cover Statement</label>
+            <textarea id="intern-statement" class="input-field textarea-field" placeholder="Briefly describe why you want to intern at Keezenix Global's KZ Campus (at least 30 characters)."></textarea>
+            <span class="input-error-msg" id="intern-statement-error">Cover statement must be at least 30 characters.</span>
+          </div>
+          <button type="submit" class="btn btn-lime" style="width: 100%; justify-content: center;">Submit Internship Application <i data-lucide="check-circle"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enrollment & Payment Modal -->
+  <div class="modal-overlay" id="enrollment-modal">
+    <div class="modal-content-wrapper" style="max-width: 620px;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #0A4FD5 0%, #06183a 100%); border-radius: 24px 24px 0 0; padding: 2rem 2.25rem;">
+        <div>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem;">Course Enrollment</p>
+          <h3 id="enroll-course-label" style="color: #FFFFFF; font-size: 1.5rem;">Course Name</h3>
+        </div>
+        <button class="modal-close-btn" id="close-enrollment-modal-btn" style="color: rgba(255,255,255,0.8); top: 1.75rem;">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--color-text-gray); margin-bottom: 1.75rem; font-size: 0.95rem;">Choose a plan that fits your schedule and budget, then complete your enrollment below.</p>
+
+        <!-- Plan Selector Cards -->
+        <div class="enroll-plan-selector" id="enroll-plan-selector">
+          <label class="enroll-plan-card" id="enroll-plan-short">
+            <input type="radio" name="enroll-plan" value="short" id="radio-short" checked>
+            <div class="enroll-plan-card-inner">
+              <div class="enroll-plan-badge" style="background: rgba(10,79,213,0.1); color: var(--color-primary); border-color: rgba(10,79,213,0.2);"><i data-lucide="zap"></i> Short Term</div>
+              <div class="enroll-plan-duration">4 – 5 Weeks</div>
+              <div class="enroll-plan-price" id="enroll-price-short">₹ 0</div>
+              <div class="enroll-plan-pricetag">Per Person</div>
+              <ul class="enroll-plan-perks">
+                <li><i data-lucide="check"></i> Core Fundamentals</li>
+                <li><i data-lucide="check"></i> 2 Project Sprints</li>
+                <li><i data-lucide="check"></i> Certificate of Completion</li>
+              </ul>
+            </div>
+          </label>
+
+          <label class="enroll-plan-card" id="enroll-plan-long">
+            <input type="radio" name="enroll-plan" value="long" id="radio-long">
+            <div class="enroll-plan-card-inner">
+              <div class="enroll-plan-badge popular-badge">⭐ Most Popular</div>
+              <div class="enroll-plan-badge" style="background: rgba(132,204,22,0.1); color: #4d7c0f; border-color: rgba(132,204,22,0.25); margin-top: 0.5rem;"><i data-lucide="trending-up"></i> Long Term</div>
+              <div class="enroll-plan-duration">4 – 5 Months</div>
+              <div class="enroll-plan-price" id="enroll-price-long">₹ 0</div>
+              <div class="enroll-plan-pricetag">Per Person</div>
+              <ul class="enroll-plan-perks">
+                <li><i data-lucide="check"></i> Full Curriculum Access</li>
+                <li><i data-lucide="check"></i> 6 Production Projects</li>
+                <li><i data-lucide="check"></i> Internship Opportunity</li>
+                <li><i data-lucide="check"></i> 1-on-1 Mentorship</li>
+                <li><i data-lucide="check"></i> Placement Support</li>
+              </ul>
+            </div>
+          </label>
+        </div>
+
+        <!-- Payment Summary Bar -->
+        <div class="payment-summary-bar">
+          <div>
+            <span class="payment-summary-label">Selected Plan:</span>
+            <span class="payment-summary-value" id="summary-plan-name">Short Term (4–5 Weeks)</span>
+          </div>
+          <div>
+            <span class="payment-summary-label">Total:</span>
+            <span class="payment-summary-price" id="summary-price">₹ 0</span>
+          </div>
+        </div>
+
+        <!-- Payment Form -->
+        <form id="enrollment-form" novalidate style="margin-top: 1.5rem;">
+          <input type="hidden" id="enroll-course-id-hidden">
+          <input type="hidden" id="enroll-selected-plan" value="short">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="enroll-name" class="form-label">Full Name</label>
+              <input type="text" id="enroll-name" class="input-field" placeholder="John Doe">
+              <span class="input-error-msg" id="enroll-name-error">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="enroll-email" class="form-label">Email Address</label>
+              <input type="email" id="enroll-email" class="input-field" placeholder="learner@example.com">
+              <span class="input-error-msg" id="enroll-email-error">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="enroll-phone" class="form-label">Phone Number</label>
+              <input type="tel" id="enroll-phone" class="input-field" placeholder="+91 98765 43210">
+              <span class="input-error-msg" id="enroll-phone-error">Please enter your phone number.</span>
+            </div>
+            <div class="form-group">
+              <label for="enroll-card" class="form-label">Card Number</label>
+              <input type="text" id="enroll-card" class="input-field" placeholder="1234 5678 9012 3456" maxlength="19">
+              <span class="input-error-msg" id="enroll-card-error">Please enter a valid 16-digit card number.</span>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="enroll-expiry" class="form-label">Expiry Date</label>
+              <input type="text" id="enroll-expiry" class="input-field" placeholder="MM / YY" maxlength="7">
+              <span class="input-error-msg" id="enroll-expiry-error">Please enter expiry (MM/YY).</span>
+            </div>
+            <div class="form-group">
+              <label for="enroll-cvv" class="form-label">CVV</label>
+              <input type="text" id="enroll-cvv" class="input-field" placeholder="•••" maxlength="3">
+              <span class="input-error-msg" id="enroll-cvv-error">Please enter your 3-digit CVV.</span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-lime" id="pay-now-btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+            <i data-lucide="lock"></i> Pay Now &amp; Enroll
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Toast Container -->
+  <div class="toast-notification" id="toast-notif">
+    <div class="toast-icon"><i data-lucide="check-circle-2"></i></div>
+    <div class="toast-message">
+      <h5 id="toast-title">Success</h5>
+      <p id="toast-desc">Your message has been sent.</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid grid">
+      
+      <!-- Company column -->
+      <div class="footer-col">
+        <a href="#home" class="nav-logo" style="margin-bottom: 1.5rem;">
+          <img src="assets/logo.jpg" alt="KZ Campus Logo">
+          <span>KZ Campus</span>
+        </a>
+        <p>A subsidiary academy of Keezenix Global. We build elite software developers, database engineers, system designers, and growth marketers through rigorous real-world building.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i data-lucide="github"></i></a>
+          <a href="#" class="social-btn"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="social-btn"><i data-lucide="twitter"></i></a>
+          <a href="#" class="social-btn"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Links column 1 -->
+      <div class="footer-col">
+        <h4>Academy Links</h4>
+        <ul class="footer-links">
+          <li><a href="#courses">Web Development</a></li>
+          <li><a href="#courses">Artificial Intelligence</a></li>
+          <li><a href="#courses">Python Automation</a></li>
+          <li><a href="#courses">Growth Engineering</a></li>
+          <li><a href="#courses">Rust Systems Programming</a></li>
+        </ul>
+      </div>
+
+      <!-- Links column 2 -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Our Story</a></li>
+          <li><a href="#about">Mentorship Board</a></li>
+          <li><a href="#internships">Internship Careers</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+          <li><a href="#about">Keezenix Global</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter column -->
+      <div class="footer-col">
+        <h4>Subscribe to Newsletter</h4>
+        <p>Receive upcoming cohort schedules, career advice, and technological industry insight direct to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-subscription-form">
+          <input type="email" id="news-email" placeholder="email@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright bar -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Keezenix Global - KZ Campus. All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

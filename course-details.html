@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detailed program syllabus and plan options at KZ Campus by Keezenix Global.">
+  <title>Course Details | KZ Campus Academy</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+</head>
+<body>
+
+  <!-- Floating Background Blobs -->
+  <div class="glow-bg-blob blob-1"></div>
+  <div class="glow-bg-blob blob-2"></div>
+  <div class="glow-bg-blob blob-3"></div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar" id="main-navbar" style="position: absolute; border-bottom: 1px solid rgba(15, 23, 42, 0.05);">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="logo-link">
+        <img src="assets/logo.jpg" alt="KZ Campus Logo">
+        <span>KZ Campus</span>
+      </a>
+
+      <!-- Desktop Nav Link -->
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-item">Home</a></li>
+          <li><a href="index.html#about" class="nav-item">About Us</a></li>
+          <li><a href="index.html#courses" class="nav-item active">Courses</a></li>
+          <li><a href="index.html#internships" class="nav-item">Internships</a></li>
+          <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-btn-wrapper">
+        <a href="index.html#courses" class="nav-btn">Browse Academy</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Viewport -->
+  <main class="main-content" style="margin-top: 100px; min-height: calc(100vh - 100px - 320px);">
+    <div class="section" style="padding: 4rem 0;">
+      <div class="container">
+        
+        <!-- Breadcrumb / Header Row -->
+        <div style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <a href="index.html#courses" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--color-primary); font-weight: 600; font-size: 0.95rem;">
+            <i data-lucide="arrow-left"></i> Back to Academy Programs
+          </a>
+          <span style="background: rgba(10, 79, 213, 0.08); color: var(--color-primary); padding: 0.35rem 1rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;" id="details-category-badge">Academy Program</span>
+        </div>
+
+        <!-- Standalone Details Layout -->
+        <div class="details-page-grid" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: start;">
+          
+          <!-- Left Column: Overview and plan switching -->
+          <div class="card-glass" style="padding: 3rem; background: #FFFFFF;" id="details-main-card">
+            
+            <h1 id="details-course-title" style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 900; line-height: 1.2; margin-bottom: 1.25rem; color: var(--color-text-white);">Course Title</h1>
+            
+            <p id="details-course-desc" style="color: var(--color-text-gray); font-size: 1.05rem; line-height: 1.65; margin-bottom: 2rem;">Loading course details and overview content...</p>
+
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 1rem; color: var(--color-text-white);">Choose Program Schedule</h3>
+
+            <!-- Plan Tabs Switcher -->
+            <div class="plan-tabs-bar" style="margin-bottom: 2rem;">
+              <button class="plan-tab active" data-plan="short" id="tab-details-short" style="padding: 1rem;">
+                <i data-lucide="zap"></i>
+                <div style="display: flex; flex-direction: column; text-align: left; margin-left: 0.5rem;">
+                  <span style="font-size: 0.95rem; font-weight: 700;">Short Term</span>
+                  <small style="font-size: 0.75rem; opacity: 0.85;">4 – 5 Weeks</small>
+                </div>
+              </button>
+              <button class="plan-tab" data-plan="long" id="tab-details-long" style="padding: 1rem;">
+                <i data-lucide="trending-up"></i>
+                <div style="display: flex; flex-direction: column; text-align: left; margin-left: 0.5rem;">
+                  <span style="font-size: 0.95rem; font-weight: 700;">Long Term</span>
+                  <small style="font-size: 0.75rem; opacity: 0.85;">4 – 5 Months</small>
+                </div>
+              </button>
+            </div>
+
+            <!-- Pricing overview -->
+            <div class="plan-overview" style="margin-bottom: 2rem;">
+              <div class="plan-overview-info">
+                <p id="details-plan-desc" style="color: var(--color-text-gray); font-size: 0.95rem; line-height: 1.65;">Detailed description of the selected cohort track and structural learning path.</p>
+              </div>
+              <div class="plan-fee-card fee-blue" id="details-plan-fee-card" style="padding: 1.5rem; min-width: 220px; text-align: center; border-radius: var(--radius-md);">
+                <p class="fee-label" style="text-transform: uppercase; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.85);" id="fee-card-title">Short Term Fee</p>
+                <p class="fee-amount" id="details-plan-fee" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 900; margin: 0.25rem 0;">₹ 0</p>
+                <p class="fee-sub" id="details-plan-duration" style="font-size: 0.8rem; opacity: 0.8;">Per Person · 4–5 Weeks</p>
+              </div>
+            </div>
+
+            <!-- Tab Actions -->
+            <div style="display: flex; gap: 1rem;">
+              <button class="btn btn-primary" id="btn-details-enroll" style="padding: 1rem 2.25rem; font-size: 1.05rem; flex: 1; justify-content: center; font-weight: 700;">Enroll In Program Now <i data-lucide="arrow-right"></i></button>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Timeline Modules -->
+          <div class="card-glass" style="padding: 3rem; background: #FFFFFF; height: fit-content; position: sticky; top: 120px;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; margin-bottom: 1.5rem; color: var(--color-text-white); display: flex; align-items: center; gap: 0.5rem;" id="details-syllabus-header">
+              <i data-lucide="list-todo" style="color: var(--color-primary);"></i> <span id="syllabus-headline-text">Short Term Modules</span>
+            </h3>
+            
+            <ul class="course-curriculum-list" id="details-curriculum-list">
+              <!-- Dynamically populated timeline items -->
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-bottom" style="border-top: none; padding-top: 0; text-align: center;">
+      <p>&copy; 2026 Keezenix Global - KZ Campus. All rights reserved.</p>
+      <div class="footer-legal-links" style="justify-content: center; margin-top: 1rem;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="src/details.js"></script>
+</body>
+</html>

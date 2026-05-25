@@ -1,0 +1,19 @@
+{
+  "name": "kz-campus",
+  "version": "1.0.0",
+  "description": "Professional EdTech Website for KZ Campus by Keezenix Global",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3002 -c-1"
+  },
+  "keywords": [
+    "edtech",
+    "kz-campus",
+    "keezenix-global",
+    "academy",
+    "courses",
+    "internship"
+  ],
+  "author": "Keezenix Global",
+  "license": "ISC"
+}
