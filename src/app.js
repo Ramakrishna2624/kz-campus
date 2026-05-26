@@ -377,7 +377,7 @@ function initCourseSystem() {
     document.body.style.overflow = '';
   }
 
-  // Hook up event listeners to all course cards and buttons to open the detail popup modal
+  // Hook up event listeners to all course cards and buttons to navigate to course-details.html
   courseCards.forEach(card => {
     card.style.cursor = 'pointer';
     card.addEventListener('click', (e) => {
@@ -386,7 +386,7 @@ function initCourseSystem() {
       
       e.preventDefault();
       const courseId = btn.getAttribute('data-course-id');
-      openDetailModal(courseId);
+      window.location.href = `course-details.html?course=${courseId}`;
     });
   });
 
@@ -403,6 +403,17 @@ function initCourseSystem() {
 
   // ── Initialize the payment/enrollment modal ───────────────────────────
   initEnrollmentModal();
+
+  // Check for enroll and plan parameters in URL query (from course-details page redirect)
+  const params = new URLSearchParams(window.location.search);
+  const enrollCourseId = params.get('enroll');
+  if (enrollCourseId && COURSE_DATABASE[enrollCourseId]) {
+    const plan = params.get('plan') || 'short';
+    // Open the enrollment modal after a slight delay to ensure UI is ready
+    setTimeout(() => {
+      openEnrollmentModal(enrollCourseId, plan);
+    }, 100);
+  }
 }
 
 function initEnrollmentModal() {
