@@ -137,7 +137,41 @@ const COURSE_DATABASE = {
   }
 };
 
+function initNavigation() {
+  const navbar = document.getElementById('main-navbar');
+  const menuToggle = document.getElementById('mobile-menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (!menuToggle || !navMenu) return;
+
+  // Change navbar appearance on scroll
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // Mobile Hamburger Toggle
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open');
+    navMenu.classList.toggle('mobile-open');
+  });
+
+  // Close mobile menu when clicking a nav link
+  navMenu.addEventListener('click', (e) => {
+    if (e.target.classList.contains('nav-item')) {
+      menuToggle.classList.remove('open');
+      navMenu.classList.remove('mobile-open');
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Mobile Navigation Menu
+  initNavigation();
+
   // Initialize Lucide Icons
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();

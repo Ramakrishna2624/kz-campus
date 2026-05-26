@@ -1299,6 +1299,24 @@ svg.lucide, .lucide {
   align-items: start;
 }
 
+/* Standalone Details Page Grid & Layout */
+.details-page-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: start;
+}
+.details-left-card {
+  padding: 3rem;
+  background: #FFFFFF;
+}
+.details-right-card {
+  padding: 3rem;
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+}
+
 .contact-info-list {
   display: flex;
   flex-direction: column;
@@ -1983,11 +2001,34 @@ svg.lucide, .lucide {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
+  .details-page-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .details-right-card {
+    position: static !important;
+  }
 }
 
 @media (max-width: 768px) {
   :root {
     --h1-size: 2.35rem;
+  }
+
+  .details-left-card,
+  .details-right-card {
+    padding: 1.75rem !important;
+  }
+
+  .plan-overview {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #details-plan-fee-card {
+    min-width: 100% !important;
   }
 
   .section {
